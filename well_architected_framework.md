@@ -58,6 +58,7 @@
     - define playbooks
     - run incident simulations
     - automate incident response
+- minimise your attack surface
 ### Best Practices
 - identity and access control
     - who can do what to what
