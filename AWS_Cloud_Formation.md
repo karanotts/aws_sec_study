@@ -1,0 +1,3 @@
+# AWS CloudFormation
+
+Automated deployment.
