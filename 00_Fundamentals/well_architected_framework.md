@@ -1,4 +1,4 @@
-# * Operational Excellence
+# 1. Operational Excellence
 ## Run, monitor and improve systems
 ### Design Principles
 - operations as code (`CloudFormation`, `Code Pipeline`)
@@ -22,12 +22,22 @@
     - consider costs
     - ask if you achived your goals
 - evolve
+    - incorporate feedback loops and use feedback to:
+        - identify areas for improvement
+        - prioritise and drive improvement
     - evaluate environment and processes
     - share knowledge
     - small improvement over big changes
+### Key Points
+- understand business priorities
+- design for operations, architect for insight
+- evaluate operational readiness
+- understand health of your workloads
+- prepare for incidents
+- learn from experience and make improvements
 <hr/><hr/><br />
 
-# * Security
+# 2. Security
 ## Protect your data, systems and assets
 ### Design Principles
 - strong identity foundation
@@ -53,6 +63,7 @@
 - keep people away from data
     - reduce or eliminate manual access to production data
     - do not use production data in test 
+    - provide dashboard for viewing instead of direct access to data
 - prepare for security events
     - incident management
     - define playbooks
@@ -66,10 +77,18 @@
     - scan and alert unwanted changes
 - infrastructure protection
     - spread infra over AZs to reduce impact of failure or attack
+    - think about outer layers (edge) first, then move down
+    - use managed services (patching, hardening, etc)
 - data protection
     - your data - your problem
     - consider ecryption, storage, access
 - incident response
+### Key Points
+- protect information systems and assets whilst delivering business value
+- protect root account credentials
+- encrypt data in transit and at rest
+- ensure only authenticated and authorised users can access resources
+- use detective controls to detect security breaches
 <hr/><hr/><br />
 
 # * Reliability

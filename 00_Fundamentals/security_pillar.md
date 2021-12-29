@@ -7,10 +7,10 @@ Ensure that only authenticated and authorised users are able to access resources
     - Least privilege
 
 Services:
-- [Amazon Cognito](./Amazon_Cognito.md)
-- [AWS Directory Services](./AWS_Directory_services.md)
-- [AWS IAM](./AWS_IAM.md)
-- [AWS Single Sign-On](./AWS_Single_Sign-On.md)
+- [Amazon Cognito](../99_Services/Amazon_Cognito.md)
+- [AWS Directory Services](../99_Services/AWS_Directory_services.md)
+- [AWS IAM](../99_Services/AWS_IAM.md)
+- [AWS Single Sign-On](../99_Services/AWS_Single_Sign-On.md)
 
 ### Detective Controls
 Identify potential security threat or incident.
