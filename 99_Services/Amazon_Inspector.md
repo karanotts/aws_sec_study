@@ -14,7 +14,12 @@ Cen be configured to run on schedule.
 
 - Network assesments:
     - network reachability (doesn't require agent to be installed on the host)
+        - end to end (EC2, ALB, DX, ELB, ENI, IGW, ACLs, RTs, SGs, subnets, VPCs, VGWs, VPC Peerings)
     - port reachability from outside the VPC
+        - RecognizedPortWithListener
+        - RecognizedPortNoListener
+        - RegognizedPortNoAgent
+        - UnrecognizedPortWithListener
     - process reachability on those ports
 - Host assesments:
     - common vulnerabilities and exposure (CVEs)

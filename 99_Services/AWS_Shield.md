@@ -12,10 +12,13 @@ Integrates with Route53, CloudFront and ALB.
     - always-on detection
     - automatic inline mitigation
     - l3 and l4 protection
+    - free with Route53 and CloudFront
 
 - AWS Shield Advanced
     - all AWS Shield standard features
+    - extra: EC2, ELB, Global Accelerator
     - expanded DDoS protection
     - 24/7 DDoS response team
-    - cost protection for DDoS spikes
+    - cost protection (insurance) for DDoS spikes
     - access to real-time reports
+    - $3,000 p/m per organization
