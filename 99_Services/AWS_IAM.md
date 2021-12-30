@@ -12,3 +12,21 @@
     - DNS logs
 
 - Uses integrated threat intelligence (ie. known malicious IPs), anomaly detection, and machine learning to identify threats
+
+<strong>Principal</strong>: a person or application that can make a request for an <strong>action</strong> or an <strong>operation</strong> on an AWS resource. 
+
+All principals must be authenticated to send requests. 
+
+Request context:
+- action/operation
+- resources
+- principal
+- environment data
+- resource data
+
+### Authentication Methods
+- username + password
+- secret_access_key + access_key_id
+- signing certificate
+- ssh keys
+- keyspace credentials
