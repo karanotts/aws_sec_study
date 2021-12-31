@@ -2,31 +2,43 @@
 
 Policy - a set of allow or deny statements that get attached to identities inside AWS.
 
-Explicit deny > explicit allow > implicit deny > implicit allow
+Explicit deny > allow > implicit deny 
+![AWS Policy Evaluation Logic](../images/policy_eval.png)
 
-
-- Identity based policies - attached to a principal or identity
+1. Implicit DENY
+2. SCP
+3. Resource-based policies
+- IAM 
+- Identity based policies - attached to a principal or identity (users, groups, roles)
     - Inline policies 
         - attached directly (1-to-1) to <strong>single</strong> user/group/role
     - Managed policies
+        - <strong>AWS managed</strong> or <strong>customer managed</strong>
         - standlone
         - attached to <strong>multiple</strong> users/group/roles
 
 - Resource based policies - attached to a resource
-    - Inline only
-    - Trust policies
+    - <strong>Inline only</strong>
+    - trust policies
     - grant specified principal permission to perform specific action on the resource
-        
+
+- IAM permissions boundaries - set the maximum permissions identity based policy can grant an IAM entity (use to avoid privilege escalation)
+
+- Service Control Policies (SCP)
+    - use IAM policy documents to apply permission to what can be done in a member account
+    - similar to IAM permission boundaries, define maximum allowed permissions (API actions) but don't grant automatic permissions to execute those API actions
 
 ```
 {
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "AllowAll",
-            "Effect": "Allow",
-            "Action": "s3:*",
-            "Resource": "*"
+            "Sid": "AllowAll",  # just a friendly name, optional
+            "Effect": "Allow",  # is allowed or denied?
+            "Principal": {}     # who/what can perform action?
+            "Action": "s3:*",   # what can be done with the resource?
+            "Resource": "*",    # on which resource can action be performed?
+            "Condition": {}     # what condition must be met? (MFA, IP etc)
         },
         {
             "Sid": "DenyThisBucket",
@@ -38,7 +50,7 @@ Explicit deny > explicit allow > implicit deny > implicit allow
 }
 ```
 
-ABAC (Attribute-based Access Control)
+### ABAC (Attribute-based Access Control)
 
 Example: Allow based on <strong>condition</strong> that principal has tags "Unit": "DevOpsEngs"
 ```

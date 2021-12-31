@@ -4,10 +4,11 @@ Managed service offering that provides directories containing organizations, use
 
 Uses <strong>Microsoft Active Directory</strong> or <strong>Lightweight Directory Access Protocol (LDAP) </strong>
 
-### AWS Managed Mictosoft AD
+### AWS Managed Microsoft AD
 - AWS Directory Service for Microsoft AD
 - LDAP support for Linux applications
 
+![AWS AD](../images/aws_ad.png)
 
 ### Active Directory Connector
 - allows on-prem users to log into AWS with their AD credentials

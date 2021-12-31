@@ -7,5 +7,7 @@ Used (assumed) on a temporary basis, for a short period of time by other identit
 - trust policies:
     - which identity is allowed to assume role
     - can be anonymous or federated
+    - resource based policies
 
 - permissions policies:
+    - identity based policies
