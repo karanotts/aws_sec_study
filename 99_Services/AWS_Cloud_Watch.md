@@ -1,5 +1,9 @@
 # AWS CloudWatch
 
+Public Service - usable from AWS or on-premise
+
+Integrations: AWS services, Unified CloudWatch Agent, Development Kit for AWS
+
 - Namespace:
     - a container for CloudWatch metrics
     - metrics in different namespaces are isolated from each other

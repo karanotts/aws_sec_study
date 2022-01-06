@@ -1,5 +1,6 @@
 # AWS Cloud Trail
 
+
 Provides goverance, compliance and audit for AWS Accounts by providing history of events (API calls) made by
 - console
 - SDK
@@ -16,7 +17,7 @@ CloudTrail Events:
         - Read Events
         - Write Events
 - Data Events
-    - Not logged by defautl
+    - Not logged by defautl (come at extra cost!)
     - S3 object-level activity (GetObject, DeleteObject etc)
     - Lambda function executyion activity
 - Insight Events
@@ -31,4 +32,4 @@ CloudTrail Events:
         - S3 Bucket
         - EventBridge events
 
-CloudTrail Events are stored for 90 days by default. Use S3 Buckets for long term retention. 
+CloudTrail Events are stored for <strong>90 days</strong> by default. Use S3 Buckets for long term retention. 
