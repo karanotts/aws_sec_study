@@ -20,7 +20,7 @@ Explicit deny > allow > implicit deny
 - Resource based policies - attached to a resource
     - <strong>Inline only</strong>
     - trust policies
-    - grant specified principal permission to perform specific action on the resource
+    - grant specified <strong>principal</strong> permission to perform specific action on the resource
 
 - IAM permissions boundaries - set the maximum permissions identity based policy can grant an IAM entity (use to avoid privilege escalation)
 
