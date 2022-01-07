@@ -4,7 +4,7 @@ AWS provides a suite of services that will monitor and combat threats through un
 
 
 - [AWS Security Hub](../99_Services/AWS_Security_Hub.md)
-- [AWS Guard Duty](../99_Services/AWS_Guard_Duty.md)
+- [Amazon Guard Duty](../99_Services/Amazon_Guard_Duty.md)
 - [Amazon Inspector](../99_Services/Amazon_Inspector.md)
 - [Amazon Detective](../99_Services/Amazon_Detective.md)
 - [Amazon Macie](../99_Services/Amazon_Macie.md)

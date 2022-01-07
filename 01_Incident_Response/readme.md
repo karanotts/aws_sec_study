@@ -30,7 +30,7 @@ Incident responses can be manual or automated.
 
 [AWS Macie](../99_Services/AWS_Macie.md)
 
-[AWS Guard Duty](../99_Services/AWS_Guard_Duty.md)
+[Amazon Guard Duty](../99_Services/Amazon_Guard_Duty.md)
 
 [AWS Security Hub](../99_Services/AWS_Security_Hub.md)
 

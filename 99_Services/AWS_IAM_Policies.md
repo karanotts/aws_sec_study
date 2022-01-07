@@ -50,6 +50,35 @@ Explicit deny > allow > implicit deny
 }
 ```
 
+Set time constraints on policy:
+```
+    "Condition": {
+        "DateGreaterThan": {"aws:CurrentTime": "2020-12-01T00:00:00Z"},
+        "DateLessThan": {"aws:CurrentTime": "2020-12-25T06:00:00Z"}
+    }
+```
+
+`NotAction` - inverse of `Action`, matches everything that is <strong>not</strong> specified:
+```
+    "NotAction": [
+        "cloudfront:*",
+        "iam:*",
+        "route53:*",
+        "support:*"
+    ]
+```
+
+`StringNotEquals` - inverse of `StringEquals`:
+```
+    "Condition": {
+        "StringNotEquals": {
+            "aws:RequestedRegion": [
+                "ap-southeast-2",
+                "eu-west-1"
+            ]
+        }
+    }
+```
 ### ABAC (Attribute-based Access Control)
 
 Example: Allow based on <strong>condition</strong> that principal has tags "Unit": "DevOpsEngs"
