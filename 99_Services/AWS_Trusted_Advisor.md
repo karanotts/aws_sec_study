@@ -16,3 +16,16 @@ Example of using AWS Config for incident response:
 - Create <strong>CloudWatch Events Rule</strong> to detect red alert status in Trusted Advisor (ie. security group port 22 unrestricted access)
 - Create <strong>Lambda Function</strong> to remediate issue (ie. update security group rule via EC2 API command)
 - (Optional) Create SNS Topic to get notifications by text or email
+<br><br>
+7 free core checks (Basic and Developer tier):
+- S3 Bucket permissions (not objects)
+- Security Groups (specific ports)
+- IAM Use
+- MFA on Root Account enabled
+- EBS Public Snapshots
+- RDS Public Snapshots
+- 50 service limit check
+
+Business and Enterprise tier:
+- all included in core checks
+- 115 further checks

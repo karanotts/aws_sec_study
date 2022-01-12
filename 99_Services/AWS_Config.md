@@ -1,5 +1,12 @@
 # AWS Config
 
+RECORD CONFIG CHANGES OVER TIME ON RESOURCES.
+
+Doesn't prevent changes, only audits and highlights non compliance. 
+
+Notify about changes via Lambda or SNS. 
+
+<br><br>
 Continuous monitoring, recording and assesment service that detects non-compliance configurations. 
 
 Config operations are limited to regions.
